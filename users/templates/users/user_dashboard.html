@@ -1,0 +1,20 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+
+        {% if user.avatar %}
+            <p>
+                <img width="400" src="{{ user.avatar.url }}" />
+            </p>
+        {% else %}
+             <p>
+                <img width="400" src='/media/images/Заглушка.png' />
+            </p>
+        {% endif %}
+
+        <h1>{{ user.username }}</h1>
+        <h1>{{ role.name }}</h1>
+    <a href="{% url 'logout' %}">
+        <button type="submit">Выйти</button>
+    </a>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+
+    <form action="." method="post">
+        {% csrf_token %}
+        {{ form_feedback.as_p }}
+        <h2>Создать вопрос</h2>
+        {{ form_question.as_p }}
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+{% endblock %}

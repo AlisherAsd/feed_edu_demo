@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="{% static 'feed/css/style.css' %}" rel="stylesheet" />
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div class="menu">
+            {% for el in menu %}
+            <ul class="nobullet">
+                <a href="{% url el.url %}">
+                    <li> {{ el.title }}   </li>
+                </a>
+            </ul>
+            {% endfor %}     
+{#            {% if user.is_authenticated %}#}
+{#                <a href="#">#}
+{#                    <div class="asd"><h3>{{ user.username }}</h3></div>#}
+{#                </a>#}
+{#                <a href="/users/logout">#}
+{#                    <div class="asd"> Выйти </div>#}
+{#                </a>#}
+{#            {% else %}#}
+{#                <a href="/users/logout">#}
+{#                    <div class="asd"> Войти </div>#}
+{#                </a>#}
+{#                |#}
+{#                <a href="/users/register">#}
+{#                    <div class="asd"> Регистрация </div>#}
+{#                </a>#}
+{#            {% endif %}#}
+{#        #}
+    </div>
+
+    <div class="content">
+        <div class="title">
+            <h1>{{ title }}</h1>
+        </div>
+
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

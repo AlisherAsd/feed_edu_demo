@@ -1,0 +1,26 @@
+    {% extends 'Base.html' %}
+
+{% block content %}
+    {% for fdb in feedbacks %}
+        <hr>
+        <h1>{{ fdb.title }}</h1>
+        <p>{{ fdb.description }}</p>
+        {% for type in type_feedback %}
+            {% if type.id == fdb.type_id %}
+                <h4>Тип: </h4>{{ type.title }}
+            {% endif %}
+        {% endfor %}
+        <div>
+            <h3>Вопросы внутри</h3>
+            {% for question in questions %}
+
+                {% if question.feedback_id == fdb.id %}
+                    Название: <h4>{{ question.title }}</h4>
+                    Содержимое: {{ question.value }}
+
+                {% endif %}
+            {% endfor %}
+        </div>
+        <hr>
+    {% endfor %}
+{% endblock %}

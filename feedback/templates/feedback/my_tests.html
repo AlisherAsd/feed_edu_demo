@@ -1,0 +1,8 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+     {% for fdb in feedbacks %}
+         <h2>{{ fdb.title }}</h2>
+         <p>{{ fdb.description }}</p>
+    {% endfor %}
+{% endblock %}

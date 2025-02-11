@@ -1,0 +1,17 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+      {% for user in users %}
+          <div>
+          <hr>
+                <h3>Username: {{ user.username }}</h3>
+                <h3>Lastname: {{ user.last_name }}</h3>
+                {% for role in roles %}
+                    {% if user.role_id == role.id %}
+                        {{ role.name }}
+                    {% endif %}
+                {% endfor %}
+          <hr>
+          </div>
+      {% endfor %}
+{% endblock %}
