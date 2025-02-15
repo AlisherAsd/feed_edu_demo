@@ -1,5 +1,5 @@
 from django import forms
-from .models import Feedback, User, Question
+from .models import Feedback, User, Question, Answer
 
 
 class FeedbackForm(forms.ModelForm):
@@ -32,3 +32,19 @@ class QuestionForm(forms.ModelForm):
         if commit:
             question.save()
         return question
+
+
+class AnswerForm(forms.ModelForm):
+
+    class Meta:
+        model = Answer
+        fields = ['value', 'question']
+
+
+    def save(self, commit=True, respondent=None):
+        answer = super().save(commit=False)
+        if respondent is not None:
+            answer.respondent = respondent
+        if commit:
+            answer.save()
+        return answer

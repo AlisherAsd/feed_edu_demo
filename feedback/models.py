@@ -2,6 +2,7 @@ from django.db import models
 
 from users.models import User
 
+# Сделать модель answer 1 : 1 c question, и 1 : N к users
 
 class Feedback(models.Model):
     title = models.CharField(max_length=30)
@@ -24,4 +25,10 @@ class QuestionType(models.Model):
 
 class FeedbackType(models.Model):
     title = models.CharField(max_length=30)
+
+class Answer(models.Model):
+    value = models.CharField(max_length=500)
+    respondent = models.ForeignKey(User, on_delete=models.CASCADE)
+    question = models.OneToOneField(Question, on_delete=models.CASCADE)
+
 

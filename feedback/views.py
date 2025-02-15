@@ -1,12 +1,12 @@
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.views import View
-from docutils.nodes import title
 from django.contrib.auth import get_user_model
 
 from feedback.utils import get_data
-from .forms import FeedbackForm, QuestionForm
-from .models import Feedback, Question, FeedbackType
+from .forms import FeedbackForm, QuestionForm, AnswerForm
+from .models import Feedback, Question, FeedbackType, Answer
 
 menu = [
     {'title': 'Запросить', 'url': 'test_constructor'},
@@ -15,6 +15,7 @@ menu = [
     {'title': 'Входящие запросы', 'url': 'available_tests'},
     {'title': 'Пользователи', 'url': 'users'},
 ]
+
 
 class test_constructor(View):
     def get(self, request):
@@ -51,10 +52,12 @@ class test_constructor(View):
 class my_tests(View):
     def get(self, request):
         feedbacks = Feedback.objects.filter(sender_id = request.user.id)
+        answers = Answer.objects.all()
         data = {
             'title': 'Исходящие запросы',
             'menu': menu,
-            'feedbacks': feedbacks
+            'feedbacks': feedbacks,
+            'answers': answers
         }
         return render(request, 'feedback/my_tests.html', context=data)
 
@@ -75,6 +78,7 @@ class available_tests(View):
         }
         return render(request, 'feedback/available_tests.html', context=data)
 
+@login_required
 def get_question(request):
     if request.method == "GET":
         form = QuestionForm()
@@ -86,3 +90,24 @@ def get_question(request):
             return redirect('test_constructor')
         else:
             return HttpResponse("Ошибка")
+
+
+
+def get_answer(request):
+    if request.method == "GET":
+        form = AnswerForm()
+        data = {
+            'title': 'Answer',
+            'form': form
+        }
+    if request.method == "POST":
+        form = AnswerForm(request.POST)
+        User = get_user_model()
+        user = User.objects.get(id=request.user.id)
+        print(request.POST)
+        if form.is_valid():
+            form.save(respondent=user)
+            return redirect('available_tests')
+        else:
+            return HttpResponse("Ошибка, что-то с полями не так")
+    return render(request, 'feedback/answer.html', context=data)
