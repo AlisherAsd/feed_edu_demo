@@ -29,6 +29,6 @@ class FeedbackType(models.Model):
 class Answer(models.Model):
     value = models.CharField(max_length=500)
     respondent = models.ForeignKey(User, on_delete=models.CASCADE)
-    question = models.OneToOneField(Question, on_delete=models.CASCADE)
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
 
 

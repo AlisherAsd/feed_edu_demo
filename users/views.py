@@ -1,4 +1,5 @@
 from django.contrib.auth import authenticate, get_user_model
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
@@ -22,7 +23,6 @@ menu = [
 
 
 
-
 class user_dashboard(View):
     def get(self, request):
         user = request.user
@@ -34,6 +34,7 @@ class user_dashboard(View):
             'role': role,
         }
         return render(request, 'users/user_dashboard.html', context=data)
+
 
 class users(View):
     def get(self, request):
@@ -81,7 +82,7 @@ def register(request):
         user_form = UserRegistrationForm()
     return render(request, 'users/register.html', {'user_form': user_form})
 
-
+@login_required
 def logout_user(request):
     logout(request)
     return HttpResponseRedirect(reverse('index'))

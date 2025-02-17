@@ -1,0 +1,34 @@
+post: http://127.0.0.1:8000/api/feedback/test_constructor/
+    {
+        "feedback": {
+            "title": "тест с вопрососм",
+            "description": "тест с вопрососм",
+            "sender": 2,
+            "type": 1,
+            "recipient": [
+            2
+            ],
+            "questions": [
+                {
+                    "title": "это ноавый вопрос .",
+                    "value": "This field is required.",
+                    "type": 1
+                },
+                 {
+                    "title": "это ноавый вопрос .",
+                    "value": "This field is required.",
+                    "type": 1
+                }
+            ]
+        }
+    }
+
+
+
+
+post: http://127.0.0.1:8000/api/feedback/answer/
+    {
+        "value": "asdasd3",
+        "respondent": 3,
+        "question": 9
+    }

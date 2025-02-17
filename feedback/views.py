@@ -49,6 +49,7 @@ class test_constructor(View):
         }
         return render(request, 'feedback/test_constructor.html', context=data)
 
+
 class my_tests(View):
     def get(self, request):
         feedbacks = Feedback.objects.filter(sender_id = request.user.id)
@@ -60,6 +61,7 @@ class my_tests(View):
             'answers': answers
         }
         return render(request, 'feedback/my_tests.html', context=data)
+
 
 class available_tests(View):
     def get(self, request):
