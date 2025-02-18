@@ -77,6 +77,7 @@ class AnswerApiView(APIView):
     logger.debug('')
     permission_classes = (IsAuthenticated,)
     def post(self, request):
+        print(request.user)
         serializer = AnswerSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()

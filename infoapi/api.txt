@@ -1,30 +1,27 @@
 post: http://127.0.0.1:8000/api/feedback/test_constructor/
-    {
-        "feedback": {
-            "title": "тест с вопрососм",
-            "description": "тест с вопрососм",
-            "sender": 2,
-            "type": 1,
-            "recipient": [
-            2
-            ],
-            "questions": [
-                {
-                    "title": "это ноавый вопрос .",
-                    "value": "This field is required.",
-                    "type": 1
-                },
-                 {
-                    "title": "это ноавый вопрос .",
-                    "value": "This field is required.",
-                    "type": 1
-                }
-            ]
-        }
+{
+    "feedback": {
+        "title": "тест с вопрососм",
+        "description": "тест с вопрососм",
+        "sender": 2,
+        "type": 1,
+        "recipient": [
+        2
+        ],
+        "questions": [
+            {
+                "title": "это ноавый вопрос .",
+                "value": "This field is required.",
+                "type": 1
+            },
+             {
+                "title": "это ноавый вопрос .",
+                "value": "This field is required.",
+                "type": 1
+            }
+        ]
     }
-
-
-
+}
 
 post: http://127.0.0.1:8000/api/feedback/answer/
     {
@@ -32,3 +29,31 @@ post: http://127.0.0.1:8000/api/feedback/answer/
         "respondent": 3,
         "question": 9
     }
+
+post: http://127.0.0.1:8000/api/users/auth/users/
+{
+    "email": "testjoser@gmail.com",
+    "username": "testjoser1",
+    "password": "alisher890"
+}
+
+post: http://127.0.0.1:8000/api/users/auth/token/login
+{
+    "username": "testjoser1",
+    "password": "alisher890"
+}
+
+post: http://127.0.0.1:8000/api/users/auth/token/logout
+get: AUTH
+Cookie: Authorization: Token 1231231232123asdasdasdasd
+
+post: http://127.0.0.1:8000/api/users/register/
+{
+    "username": "asdas",
+    "last_name": "aasdsad",
+    "first_name": "aasdsad",
+    "email": "aasdsad@gmail.com",
+    "avatar": "",
+    "role": 1,
+    "password": "aasdsad",
+}
