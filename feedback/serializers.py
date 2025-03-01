@@ -19,12 +19,10 @@ class TypeFeedbackSerializer(serializers.ModelSerializer):
         model = FeedbackType
         fields = '__all__'
 
-
 class TypeQuestionSerializer(serializers.ModelSerializer):
     class Meta:
         model = QuestionType
         fields = '__all__'
-
 
 class QuestionSerializer(serializers.ModelSerializer):
     class Meta:
@@ -35,3 +33,7 @@ class AnswerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Answer
         fields = '__all__'
+
+    def create(self, validated_data):
+        # Создаем объект Answer
+        return Answer.objects.create(**validated_data)

@@ -4,9 +4,10 @@ from django.shortcuts import render, redirect
 from django.views import View
 from django.contrib.auth import get_user_model
 
-from feedback.utils import get_data
 from .forms import FeedbackForm, QuestionForm, AnswerForm
 from .models import Feedback, Question, FeedbackType, Answer
+
+# Вьюхи для django template
 
 menu = [
     {'title': 'Запросить', 'url': 'test_constructor'},
@@ -16,8 +17,9 @@ menu = [
     {'title': 'Пользователи', 'url': 'users'},
 ]
 
-
 class test_constructor(View):
+    """ Создание опросника """
+
     def get(self, request):
         form_feedback = FeedbackForm()
         form_question = QuestionForm()
@@ -29,6 +31,7 @@ class test_constructor(View):
             'form_question': form_question
         }
         return render(request, 'feedback/test_constructor.html', context=data)
+
     def post(self, request):
         form_feedback = FeedbackForm(request.POST)
         form_question = QuestionForm(request.POST)
@@ -51,6 +54,8 @@ class test_constructor(View):
 
 
 class my_tests(View):
+    """ Отправленные опросники """
+
     def get(self, request):
         feedbacks = Feedback.objects.filter(sender_id = request.user.id)
         answers = Answer.objects.all()
@@ -64,6 +69,8 @@ class my_tests(View):
 
 
 class available_tests(View):
+    """ Пришедшие опросники """
+
     def get(self, request):
 
         User = get_user_model()
@@ -82,6 +89,8 @@ class available_tests(View):
 
 @login_required
 def get_question(request):
+    """ Тестовая вьюха для создания вопроса в опроснике """
+
     if request.method == "GET":
         form = QuestionForm()
         return  render(request, 'feedback/question.html', {'form': form})
@@ -94,8 +103,9 @@ def get_question(request):
             return HttpResponse("Ошибка")
 
 
-
 def get_answer(request):
+    """ Тестовая вьюха для создаие ответа на вопрос """
+
     if request.method == "GET":
         form = AnswerForm()
         data = {

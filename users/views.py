@@ -9,9 +9,8 @@ from django.views import View
 
 from users.forms import UserRegistrationForm, LoginForm
 from users.models import Role
-from users.utils import get_data
 
-
+# Вьюхи для django rest users
 
 menu = [
     {'title': 'Запросить', 'url': 'test_constructor'},
@@ -21,9 +20,8 @@ menu = [
     {'title': 'Пользователи', 'url': 'users'},
 ]
 
-
-
 class user_dashboard(View):
+    """ Страница пользователя """
     def get(self, request):
         user = request.user
         role =  Role.objects.get(id=user.role_id)
@@ -35,8 +33,8 @@ class user_dashboard(View):
         }
         return render(request, 'users/user_dashboard.html', context=data)
 
-
 class users(View):
+    """ Странца всех юзеров """
     def get(self, request):
         User = get_user_model()
         users = User.objects.all()
@@ -50,6 +48,7 @@ class users(View):
         return render(request, 'users/users.html', context=data)
 
 def login(request):
+    """ Логин """
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
@@ -68,6 +67,7 @@ def login(request):
     return render(request, 'users/login.html', {'form': form})
 
 def register(request):
+    """ Регистрация """
     if request.method == 'POST':
         user_form = UserRegistrationForm(request.POST, request.FILES)
         if user_form.is_valid():
@@ -84,5 +84,6 @@ def register(request):
 
 @login_required
 def logout_user(request):
+    """ Выход """
     logout(request)
     return HttpResponseRedirect(reverse('index'))

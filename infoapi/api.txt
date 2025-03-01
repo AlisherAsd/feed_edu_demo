@@ -23,12 +23,18 @@ post: http://127.0.0.1:8000/api/feedback/test_constructor/
     }
 }
 
-post: http://127.0.0.1:8000/api/feedback/answer/
-    {
-        "value": "asdasd3",
-        "respondent": 3,
-        "question": 9
-    }
+post: http://127.0.0.1:8000/api/feedback/answer/{id}(id опросника)
+    [
+        {
+            "value": "asdasd3",
+        },
+        {
+            "value": "asdasd3",
+        },
+        {
+            "value": "asdasd3",
+        },
+    ]
 
 post: http://127.0.0.1:8000/api/users/auth/users/
 {
@@ -57,3 +63,19 @@ post: http://127.0.0.1:8000/api/users/register/
     "role": 1,
     "password": "aasdsad",
 }
+
+delete: http://127.0.0.1:8000/api/users/auth/users/me/
+AUTH
+{
+    "current_password": "password"
+}
+
+post: http://127.0.0.1:8000/api/feedback/answer/{id}(id опросника)
+AUTH
+Кол-во ответов должно быть равно кол-ву вопросов
+[
+    {value: "asdasdsad"}.
+    {value: "asdasdsad"}.
+    {value: "asdasdsad"}.
+    {value: "asdasdsad"}.
+]

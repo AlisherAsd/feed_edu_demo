@@ -1,6 +1,5 @@
-from django.contrib.auth import authenticate
-from rest_framework import generics, viewsets, status, permissions
-from rest_framework.permissions import IsAuthenticated, IsAdminUser, IsAuthenticatedOrReadOnly
+from rest_framework import viewsets, status
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -15,18 +14,21 @@ logger = logging.getLogger(__name__)
 
 
 class UserViewSet(viewsets.ReadOnlyModelViewSet):
+    """ Все юзеры """
     logger.debug('')
     serializer_class = UserListSerializer
     queryset = User.objects.all()
     permission_classes = (IsAuthenticated,)
 
 class RoleViewSet(viewsets.ReadOnlyModelViewSet):
+    """ Все роли """
     logger.debug('')
     serializer_class = RoleSerializer
     queryset = Role.objects.all()
     permission_classes = (IsAdminUser,)
 
 class UserDashboardView(APIView):
+    """ Страница пользователя """
     logger.debug('')
     permission_classes = (IsAuthenticated,)
 
@@ -37,6 +39,7 @@ class UserDashboardView(APIView):
         return Response({'user': UserListSerializer(user).data, 'role': RoleSerializer(role).data})
 
 class RegisterUserView(APIView):
+    """ Сраница регистрации """
     logger.debug('')
     def post(self, request):
         serializer = RegisterSerializer(data=request.data)
