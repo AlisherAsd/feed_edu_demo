@@ -2,12 +2,15 @@ import os
 import sys
 from datetime import timedelta
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = 'django-insecure-sco6as^51x=qw_r*gj!_b)1ok4!ph&r!+n7$^v)tts1je@bjw4'
 
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = True
 
@@ -77,8 +80,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'feededudemo',
-        'USER': 'django_admin',
-        'PASSWORD': 'password',
+        'USER': os.getenv('USER_DB'),
+        'PASSWORD': os.getenv('PASSWORD_DB'),
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }

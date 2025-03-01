@@ -1,35 +1,15 @@
-INFO 2025-03-01 11:17:42,832 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:18:48,354 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:18:49,307 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:18:54,172 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:18:55,159 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:19:07,436 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:19:07,998 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:19:27,639 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_urls.py changed, reloading.
-INFO 2025-03-01 11:19:28,178 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:19:32,068 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_urls.py changed, reloading.
-INFO 2025-03-01 11:19:32,633 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:19:51,207 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:19:52,176 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:19:55,121 basehttp "GET /swagger/ HTTP/1.1" 200 18152
-INFO 2025-03-01 11:20:43,850 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:20:45,131 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:20:47,129 basehttp "GET /swagger/ HTTP/1.1" 200 18398
-INFO 2025-03-01 11:21:07,868 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:21:08,761 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:21:09,429 basehttp "GET /swagger/ HTTP/1.1" 200 18894
-INFO 2025-03-01 11:21:19,608 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:21:20,159 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:21:36,866 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:21:37,682 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:21:40,807 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:21:41,659 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:21:42,528 basehttp "GET /swagger/ HTTP/1.1" 200 18894
-INFO 2025-03-01 11:21:52,891 basehttp "GET /admin/users/user/ HTTP/1.1" 200 12720
-INFO 2025-03-01 11:21:55,117 basehttp "GET /admin/ HTTP/1.1" 200 12209
-INFO 2025-03-01 11:21:58,039 basehttp "GET /admin/feedback/feedback/ HTTP/1.1" 200 12268
-INFO 2025-03-01 11:21:58,095 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-ERROR 2025-03-01 11:22:09,012 log Internal Server Error: /api/feedback/feedbacks/19
+INFO 2025-03-01 12:23:15,969 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
+INFO 2025-03-01 12:23:17,068 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-01 12:31:03,728 log Bad Request: /api/feedback/test_constructor/
+WARNING 2025-03-01 12:31:03,728 basehttp "POST /api/feedback/test_constructor/ HTTP/1.1" 400 37
+INFO 2025-03-01 12:31:12,925 basehttp "GET /api/feedback/my_tests/ HTTP/1.1" 200 2
+WARNING 2025-03-01 12:34:07,746 log Bad Request: /api/users/auth/users/set_username/
+WARNING 2025-03-01 12:34:07,746 basehttp "POST /api/users/auth/users/set_username/ HTTP/1.1" 400 42
+INFO 2025-03-01 12:38:06,064 basehttp "GET /admin/ HTTP/1.1" 200 10896
+WARNING 2025-03-01 12:38:22,807 log Not Found: /user_dashboard
+WARNING 2025-03-01 12:38:22,808 basehttp "GET /user_dashboard HTTP/1.1" 404 3311
+INFO 2025-03-01 12:38:27,916 basehttp "GET /users/user_dashboard HTTP/1.1" 301 0
+ERROR 2025-03-01 12:38:28,125 log Internal Server Error: /users/user_dashboard/
 Traceback (most recent call last):
   File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
     response = get_response(request)
@@ -37,136 +17,23 @@ Traceback (most recent call last):
   File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
-    return view_func(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
     return self.dispatch(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: FeedbackDetailApiView.get() got an unexpected keyword argument 'id'
-ERROR 2025-03-01 11:22:09,020 basehttp "GET /api/feedback/feedbacks/19 HTTP/1.1" 500 21458
-INFO 2025-03-01 11:24:14,278 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:24:15,858 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:24:18,307 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:24:18,942 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:24:21,350 basehttp "GET /swagger/ HTTP/1.1" 200 18894
-ERROR 2025-03-01 11:24:30,586 log Internal Server Error: /api/feedback/feedbacks/19
-Traceback (most recent call last):
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\fields.py", line 437, in get_attribute
-    return get_attribute(instance, self.source_attrs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\fields.py", line 104, in get_attribute
-    instance = getattr(instance, attr)
-               ^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'QuerySet' object has no attribute 'title'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
-    return view_func(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py", line 51, in get
-    return Response(FeedbackSerializer(feedbacks).data)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\serializers.py", line 571, in data
-    ret = super().data
-          ^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
-    self._data = self.to_representation(self.instance)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
-    attribute = field.get_attribute(instance)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\fields.py", line 470, in get_attribute
-    raise type(exc)(msg)
-AttributeError: Got AttributeError when attempting to get a value for field `title` on serializer `FeedbackSerializer`.
-The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
-Original exception text was: 'QuerySet' object has no attribute 'title'.
-ERROR 2025-03-01 11:24:30,586 basehttp "GET /api/feedback/feedbacks/19 HTTP/1.1" 500 23413
-INFO 2025-03-01 11:25:00,257 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:25:01,198 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:25:02,173 basehttp "GET /swagger/ HTTP/1.1" 200 18894
-ERROR 2025-03-01 11:25:10,355 log Internal Server Error: /api/feedback/feedbacks/19
-Traceback (most recent call last):
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
-    return view_func(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py", line 50, in get
-    feedbacks = Feedback.objects.get(sender_id=request.user.id, pk=id)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\feed_edu_demo\users\views.py", line 27, in get
+    role =  Role.objects.get(id=user.role_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
     return getattr(self.get_queryset(), name)(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\db\models\query.py", line 649, in get
     raise self.model.DoesNotExist(
-feedback.models.Feedback.DoesNotExist: Feedback matching query does not exist.
-ERROR 2025-03-01 11:25:10,355 basehttp "GET /api/feedback/feedbacks/19 HTTP/1.1" 500 22038
-INFO 2025-03-01 11:26:32,286 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:26:32,922 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:26:34,932 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:26:35,522 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:26:47,146 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:26:47,708 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:27:29,965 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:27:30,539 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:28:34,123 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:28:35,372 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:28:41,772 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:28:42,617 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:28:45,643 basehttp "GET /swagger/ HTTP/1.1" 200 18894
-INFO 2025-03-01 11:28:53,758 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:28:54,377 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:28:56,009 basehttp "GET /swagger/ HTTP/1.1" 200 18894
-ERROR 2025-03-01 11:29:04,132 log Internal Server Error: /api/feedback/feedbacks/19
+users.models.Role.DoesNotExist: Role matching query does not exist.
+ERROR 2025-03-01 12:38:28,125 basehttp "GET /users/user_dashboard/ HTTP/1.1" 500 89791
+ERROR 2025-03-01 12:38:43,454 log Internal Server Error: /users/user_dashboard/
 Traceback (most recent call last):
   File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
     response = get_response(request)
@@ -174,132 +41,315 @@ Traceback (most recent call last):
   File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
-    return view_func(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
     return self.dispatch(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py", line 51, in get
-    feedback = Feedback.objects.get(sender_id=request.user.id, pk=feedback_id)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\feed_edu_demo\users\views.py", line 27, in get
+    role =  Role.objects.get(id=user.role_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
     return getattr(self.get_queryset(), name)(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\db\models\query.py", line 649, in get
     raise self.model.DoesNotExist(
-feedback.models.Feedback.DoesNotExist: Feedback matching query does not exist.
-ERROR 2025-03-01 11:29:04,132 basehttp "GET /api/feedback/feedbacks/19 HTTP/1.1" 500 22054
-INFO 2025-03-01 11:30:13,347 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:30:14,176 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:31:18,834 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:31:19,698 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:31:34,530 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:31:35,143 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:31:37,969 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:31:38,516 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:31:44,876 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:31:45,458 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:31:48,060 basehttp "GET /swagger/ HTTP/1.1" 200 18894
-WARNING 2025-03-01 11:31:56,878 log Not Found: /api/feedback/feedbacks/19
-WARNING 2025-03-01 11:31:56,886 basehttp "GET /api/feedback/feedbacks/19 HTTP/1.1" 404 49
-INFO 2025-03-01 11:32:05,036 basehttp "GET /admin/feedback/feedback/ HTTP/1.1" 200 12268
-INFO 2025-03-01 11:32:05,084 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 11:32:06,140 basehttp "GET /admin/feedback/feedback/19/change/ HTTP/1.1" 200 17769
-INFO 2025-03-01 11:32:06,188 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 11:35:25,293 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:35:26,873 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:35:28,080 basehttp "GET /swagger/ HTTP/1.1" 200 18894
-WARNING 2025-03-01 11:35:39,219 log Not Found: /api/feedback/feedbacks/19
-WARNING 2025-03-01 11:35:39,219 basehttp "GET /api/feedback/feedbacks/19 HTTP/1.1" 404 49
-INFO 2025-03-01 11:35:57,545 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feedback\API_views.py changed, reloading.
-INFO 2025-03-01 11:35:58,316 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:36:39,077 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 11:36:40,138 basehttp "GET /admin/ HTTP/1.1" 200 12209
-INFO 2025-03-01 11:36:44,729 basehttp "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 12583
-INFO 2025-03-01 11:36:48,700 basehttp "GET /admin/authtoken/tokenproxy/20/change/ HTTP/1.1" 200 13173
-INFO 2025-03-01 11:36:48,773 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 11:36:50,171 basehttp "GET /admin/authtoken/tokenproxy/20/delete/ HTTP/1.1" 200 11011
-INFO 2025-03-01 11:36:51,782 basehttp "POST /admin/authtoken/tokenproxy/20/delete/ HTTP/1.1" 302 0
-INFO 2025-03-01 11:36:51,838 basehttp "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 12526
-INFO 2025-03-01 11:36:53,290 basehttp "GET /admin/authtoken/tokenproxy/21/change/ HTTP/1.1" 200 13173
-INFO 2025-03-01 11:36:53,339 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 11:36:54,982 basehttp "GET /admin/authtoken/tokenproxy/21/delete/ HTTP/1.1" 200 11011
-INFO 2025-03-01 11:36:56,602 basehttp "POST /admin/authtoken/tokenproxy/21/delete/ HTTP/1.1" 302 0
-INFO 2025-03-01 11:36:56,683 basehttp "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 11531
-INFO 2025-03-01 11:36:57,776 basehttp "GET /admin/ HTTP/1.1" 200 12883
-INFO 2025-03-01 11:36:59,655 basehttp "GET /admin/feedback/answer/ HTTP/1.1" 200 12534
-INFO 2025-03-01 11:36:59,703 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 11:37:07,192 basehttp "POST /admin/feedback/answer/ HTTP/1.1" 200 11166
-INFO 2025-03-01 11:37:08,562 basehttp "POST /admin/feedback/answer/ HTTP/1.1" 302 0
-INFO 2025-03-01 11:37:08,611 basehttp "GET /admin/feedback/answer/ HTTP/1.1" 200 11078
-INFO 2025-03-01 11:37:08,659 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 11:37:22,350 basehttp "GET /admin/ HTTP/1.1" 200 13515
-INFO 2025-03-01 11:37:24,345 basehttp "GET /admin/feedback/answer/ HTTP/1.1" 200 10941
-INFO 2025-03-01 11:37:24,522 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 11:37:26,422 basehttp "GET /admin/ HTTP/1.1" 200 13515
-INFO 2025-03-01 11:37:28,104 basehttp "GET /admin/feedback/feedbacktype/ HTTP/1.1" 200 12926
-INFO 2025-03-01 11:37:28,160 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 11:37:29,575 basehttp "GET /admin/ HTTP/1.1" 200 13515
-INFO 2025-03-01 11:37:31,408 basehttp "GET /admin/feedback/questiontype/ HTTP/1.1" 200 12623
-INFO 2025-03-01 11:37:31,456 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 11:37:34,289 basehttp "GET /admin/ HTTP/1.1" 200 13515
-INFO 2025-03-01 11:37:35,772 basehttp "GET /admin/feedback/question/ HTTP/1.1" 200 12564
-INFO 2025-03-01 11:37:35,828 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 11:37:42,841 basehttp "POST /admin/feedback/question/ HTTP/1.1" 200 11188
-INFO 2025-03-01 11:37:44,139 basehttp "POST /admin/feedback/question/ HTTP/1.1" 302 0
-INFO 2025-03-01 11:37:44,179 basehttp "GET /admin/feedback/question/ HTTP/1.1" 200 11094
-INFO 2025-03-01 11:37:44,235 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 11:37:45,781 basehttp "GET /admin/ HTTP/1.1" 200 14155
-INFO 2025-03-01 11:37:49,181 basehttp "GET /admin/users/user/ HTTP/1.1" 200 12720
-INFO 2025-03-01 11:37:49,351 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 11:37:54,218 basehttp "POST /admin/users/user/ HTTP/1.1" 200 12182
-INFO 2025-03-01 11:37:56,273 basehttp "POST /admin/users/user/ HTTP/1.1" 302 0
-INFO 2025-03-01 11:37:56,414 basehttp "GET /admin/users/user/ HTTP/1.1" 302 0
-INFO 2025-03-01 11:37:56,712 basehttp "GET /admin/login/?next=/admin/users/user/ HTTP/1.1" 200 4317
-INFO 2025-03-01 11:37:56,914 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
-INFO 2025-03-01 11:38:29,736 basehttp "POST /admin/login/?next=/admin/users/user/ HTTP/1.1" 302 0
-INFO 2025-03-01 11:38:29,784 basehttp "GET /admin/users/user/ HTTP/1.1" 200 12183
-INFO 2025-03-01 11:38:29,841 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 11:38:40,304 basehttp "POST /admin/users/user/ HTTP/1.1" 200 10972
-INFO 2025-03-01 11:38:41,647 basehttp "POST /admin/users/user/ HTTP/1.1" 302 0
-INFO 2025-03-01 11:38:41,687 basehttp "GET /admin/users/user/ HTTP/1.1" 302 0
-INFO 2025-03-01 11:38:41,848 basehttp "GET /admin/login/?next=/admin/users/user/ HTTP/1.1" 200 4316
-INFO 2025-03-01 11:42:29,064 basehttp "POST /admin/login/?next=/admin/users/user/ HTTP/1.1" 302 0
-INFO 2025-03-01 11:42:29,112 basehttp "GET /admin/users/user/ HTTP/1.1" 200 12181
-INFO 2025-03-01 11:42:29,182 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 11:42:32,385 basehttp "GET /admin/users/user/1/change/ HTTP/1.1" 200 28115
-INFO 2025-03-01 11:42:32,442 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 12:03:47,683 autoreload Watching for file changes with StatReloader
-INFO 2025-03-01 12:03:57,210 basehttp "GET /swagger HTTP/1.1" 301 0
-INFO 2025-03-01 12:03:57,509 basehttp "GET /swagger/ HTTP/1.1" 200 18894
-WARNING 2025-03-01 12:03:57,803 log Not Found: /favicon.ico
-WARNING 2025-03-01 12:03:57,804 basehttp "GET /favicon.ico HTTP/1.1" 404 3302
-INFO 2025-03-01 12:04:01,694 basehttp "GET /admin/ HTTP/1.1" 200 10896
-INFO 2025-03-01 12:04:05,307 basehttp "GET /admin/users/user/ HTTP/1.1" 200 12181
-INFO 2025-03-01 12:04:05,424 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 12:04:06,904 basehttp "GET /admin/ HTTP/1.1" 200 10896
-INFO 2025-03-01 12:04:07,964 basehttp "GET /admin/feedback/question/ HTTP/1.1" 200 10955
-INFO 2025-03-01 12:04:08,024 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 12:04:09,136 basehttp "GET /admin/ HTTP/1.1" 200 10896
-INFO 2025-03-01 12:04:10,568 basehttp "GET /admin/feedback/feedback/ HTTP/1.1" 200 10955
-INFO 2025-03-01 12:04:10,624 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 12:04:11,514 basehttp "GET /admin/ HTTP/1.1" 200 10896
-INFO 2025-03-01 12:04:12,484 basehttp "GET /admin/feedback/answer/ HTTP/1.1" 200 10941
-INFO 2025-03-01 12:04:12,554 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 12:04:13,769 basehttp "GET /admin/ HTTP/1.1" 200 10896
-INFO 2025-03-01 12:04:14,644 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11271
-INFO 2025-03-01 12:04:14,714 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-03-01 12:04:15,740 basehttp "GET /admin/ HTTP/1.1" 200 10896
-INFO 2025-03-01 12:04:16,625 basehttp "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 11343
-INFO 2025-03-01 12:04:17,754 basehttp "GET /admin/ HTTP/1.1" 200 10896
+users.models.Role.DoesNotExist: Role matching query does not exist.
+ERROR 2025-03-01 12:38:43,454 basehttp "GET /users/user_dashboard/ HTTP/1.1" 500 89791
+INFO 2025-03-01 12:38:53,609 basehttp "GET // HTTP/1.1" 302 0
+ERROR 2025-03-01 12:38:53,717 log Internal Server Error: /users/user_dashboard/
+Traceback (most recent call last):
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\feed_edu_demo\users\views.py", line 27, in get
+    role =  Role.objects.get(id=user.role_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+users.models.Role.DoesNotExist: Role matching query does not exist.
+ERROR 2025-03-01 12:38:53,719 basehttp "GET /users/user_dashboard/ HTTP/1.1" 500 89791
+INFO 2025-03-01 12:38:57,876 basehttp "GET / HTTP/1.1" 302 0
+ERROR 2025-03-01 12:38:57,975 log Internal Server Error: /users/user_dashboard/
+Traceback (most recent call last):
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\feed_edu_demo\users\views.py", line 27, in get
+    role =  Role.objects.get(id=user.role_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+users.models.Role.DoesNotExist: Role matching query does not exist.
+ERROR 2025-03-01 12:38:57,975 basehttp "GET /users/user_dashboard/ HTTP/1.1" 500 89791
+INFO 2025-03-01 12:39:04,287 basehttp "GET / HTTP/1.1" 302 0
+ERROR 2025-03-01 12:39:04,499 log Internal Server Error: /users/user_dashboard/
+Traceback (most recent call last):
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\feed_edu_demo\users\views.py", line 27, in get
+    role =  Role.objects.get(id=user.role_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+users.models.Role.DoesNotExist: Role matching query does not exist.
+ERROR 2025-03-01 12:39:04,499 basehttp "GET /users/user_dashboard/ HTTP/1.1" 500 89791
+INFO 2025-03-01 12:39:07,454 basehttp "GET / HTTP/1.1" 302 0
+ERROR 2025-03-01 12:39:07,647 log Internal Server Error: /users/user_dashboard/
+Traceback (most recent call last):
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\feed_edu_demo\users\views.py", line 27, in get
+    role =  Role.objects.get(id=user.role_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+users.models.Role.DoesNotExist: Role matching query does not exist.
+ERROR 2025-03-01 12:39:07,655 basehttp "GET /users/user_dashboard/ HTTP/1.1" 500 89791
+INFO 2025-03-01 12:39:11,629 basehttp "GET /admin/ HTTP/1.1" 200 10896
+INFO 2025-03-01 12:39:14,194 basehttp "GET / HTTP/1.1" 302 0
+ERROR 2025-03-01 12:39:14,314 log Internal Server Error: /users/user_dashboard/
+Traceback (most recent call last):
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\feed_edu_demo\users\views.py", line 27, in get
+    role =  Role.objects.get(id=user.role_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\alisher_proga\feed-edu-demo\.venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+users.models.Role.DoesNotExist: Role matching query does not exist.
+ERROR 2025-03-01 12:39:14,314 basehttp "GET /users/user_dashboard/ HTTP/1.1" 500 89791
+INFO 2025-03-01 12:39:24,957 basehttp "GET /admin/users/user/ HTTP/1.1" 200 12181
+INFO 2025-03-01 12:39:25,055 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-01 12:39:27,196 basehttp "GET /admin/users/user/1/change/ HTTP/1.1" 200 28115
+INFO 2025-03-01 12:39:27,278 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-01 12:39:30,334 basehttp "POST /admin/users/user/1/change/ HTTP/1.1" 302 0
+INFO 2025-03-01 12:39:30,424 basehttp "GET /admin/users/user/ HTTP/1.1" 200 12375
+INFO 2025-03-01 12:39:30,504 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-01 12:39:32,657 basehttp "GET /users/user_dashboard/ HTTP/1.1" 200 1809
+WARNING 2025-03-01 12:39:32,674 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-03-01 12:39:35,414 log Method Not Allowed: /api/users/auth/token/logout
+WARNING 2025-03-01 12:39:35,414 basehttp "GET /api/users/auth/token/logout HTTP/1.1" 405 7165
+INFO 2025-03-01 12:39:35,846 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-03-01 12:39:35,846 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-03-01 12:39:35,854 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-03-01 12:39:35,854 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-03-01 12:39:35,854 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-03-01 12:39:35,860 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-03-01 12:39:35,860 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-03-01 12:39:35,864 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-03-01 12:39:35,869 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-03-01 12:39:35,877 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-03-01 12:39:35,877 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-03-01 12:39:35,885 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-03-01 12:40:17,719 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\users\views.py changed, reloading.
+INFO 2025-03-01 12:40:19,042 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 12:40:20,931 basehttp "GET /users/user_dashboard/ HTTP/1.1" 200 1809
+WARNING 2025-03-01 12:40:20,948 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:40:21,730 basehttp "GET /feedback/test_constructor/ HTTP/1.1" 200 3144
+WARNING 2025-03-01 12:40:21,754 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:40:23,250 basehttp "GET /feedback/my_tests/ HTTP/1.1" 200 1534
+WARNING 2025-03-01 12:40:23,266 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:40:24,074 basehttp "GET /users/user_dashboard/ HTTP/1.1" 200 1809
+WARNING 2025-03-01 12:40:24,098 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:40:24,998 basehttp "GET /feedback/available_tests/ HTTP/1.1" 200 1533
+WARNING 2025-03-01 12:40:25,023 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:40:25,875 basehttp "GET /users/users/ HTTP/1.1" 200 1885
+WARNING 2025-03-01 12:40:25,900 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:40:29,248 basehttp "GET /feedback/available_tests/ HTTP/1.1" 200 1533
+WARNING 2025-03-01 12:40:29,264 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:40:29,983 basehttp "GET /users/user_dashboard/ HTTP/1.1" 200 1809
+WARNING 2025-03-01 12:40:30,008 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:44:12,645 basehttp "GET /feedback/test_constructor/ HTTP/1.1" 200 3144
+WARNING 2025-03-01 12:44:12,669 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:44:29,682 basehttp "GET /users/user_dashboard/ HTTP/1.1" 200 1809
+WARNING 2025-03-01 12:44:29,706 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:44:32,743 basehttp "GET /users/users/ HTTP/1.1" 200 1885
+WARNING 2025-03-01 12:44:32,764 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:44:33,283 basehttp "GET /feedback/available_tests/ HTTP/1.1" 200 1533
+WARNING 2025-03-01 12:44:33,303 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:44:33,932 basehttp "GET /users/user_dashboard/ HTTP/1.1" 200 1809
+WARNING 2025-03-01 12:44:33,953 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:44:34,494 basehttp "GET /feedback/my_tests/ HTTP/1.1" 200 1534
+WARNING 2025-03-01 12:44:34,517 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:44:35,282 basehttp "GET /feedback/test_constructor/ HTTP/1.1" 200 3144
+WARNING 2025-03-01 12:44:35,312 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:44:36,732 basehttp "GET /feedback/my_tests/ HTTP/1.1" 200 1534
+WARNING 2025-03-01 12:44:36,762 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:44:37,237 basehttp "GET /users/user_dashboard/ HTTP/1.1" 200 1809
+WARNING 2025-03-01 12:44:37,262 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:47:21,245 basehttp "GET /users/users/ HTTP/1.1" 200 1885
+WARNING 2025-03-01 12:47:21,262 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:47:22,600 basehttp "GET /feedback/available_tests/ HTTP/1.1" 200 1533
+WARNING 2025-03-01 12:47:22,614 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:47:23,236 basehttp "GET /users/user_dashboard/ HTTP/1.1" 200 1809
+WARNING 2025-03-01 12:47:23,252 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:47:24,332 basehttp "GET /feedback/my_tests/ HTTP/1.1" 200 1534
+WARNING 2025-03-01 12:47:24,348 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:47:25,135 basehttp "GET /feedback/test_constructor/ HTTP/1.1" 200 3144
+WARNING 2025-03-01 12:47:25,152 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:47:27,217 basehttp "GET /feedback/my_tests/ HTTP/1.1" 200 1534
+WARNING 2025-03-01 12:47:27,234 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:47:28,203 basehttp "GET /users/user_dashboard/ HTTP/1.1" 200 1809
+WARNING 2025-03-01 12:47:28,219 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:47:29,947 basehttp "GET /feedback/test_constructor/ HTTP/1.1" 200 3144
+WARNING 2025-03-01 12:47:29,964 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:47:33,575 basehttp "GET /feedback/my_tests/ HTTP/1.1" 200 1534
+WARNING 2025-03-01 12:47:33,593 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:47:36,444 basehttp "GET /users/user_dashboard/ HTTP/1.1" 200 1809
+WARNING 2025-03-01 12:47:36,461 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:47:37,245 basehttp "GET /feedback/available_tests/ HTTP/1.1" 200 1533
+WARNING 2025-03-01 12:47:37,264 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:47:37,638 basehttp "GET /users/users/ HTTP/1.1" 200 1885
+WARNING 2025-03-01 12:47:37,656 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-03-01 12:48:52,053 basehttp "GET /admin/users/user/1/change/ HTTP/1.1" 200 28115
+INFO 2025-03-01 12:48:53,380 basehttp "GET /admin/users/user/ HTTP/1.1" 200 12181
+INFO 2025-03-01 12:48:55,036 basehttp "GET /admin/ HTTP/1.1" 200 11272
+INFO 2025-03-01 12:48:56,240 basehttp "GET /admin/feedback/questiontype/ HTTP/1.1" 200 12623
+INFO 2025-03-01 12:48:56,300 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-01 12:48:58,250 basehttp "GET /admin/ HTTP/1.1" 200 11272
+INFO 2025-03-01 12:49:13,364 basehttp "POST /api/users/register/ HTTP/1.1" 200 119
+INFO 2025-03-01 12:49:31,562 basehttp "POST /api/users/auth/token/login HTTP/1.1" 200 57
+INFO 2025-03-01 12:49:47,861 basehttp "POST /api/users/register/ HTTP/1.1" 200 119
+INFO 2025-03-01 12:50:00,371 basehttp "POST /api/users/auth/token/login HTTP/1.1" 200 57
+WARNING 2025-03-01 12:51:56,334 log Bad Request: /api/feedback/test_constructor/
+WARNING 2025-03-01 12:51:56,334 basehttp "POST /api/feedback/test_constructor/ HTTP/1.1" 400 54
+INFO 2025-03-01 12:52:48,082 basehttp "POST /api/feedback/test_constructor/ HTTP/1.1" 201 130
+INFO 2025-03-01 12:53:12,481 basehttp "GET /api/feedback/available_tests/ HTTP/1.1" 200 2
+INFO 2025-03-01 12:53:33,213 basehttp "GET /api/feedback/my_tests/ HTTP/1.1" 200 263
+WARNING 2025-03-01 12:54:54,039 log Not Found: /api/feedback/avaible_tests/
+WARNING 2025-03-01 12:54:54,039 basehttp "GET /api/feedback/avaible_tests/ HTTP/1.1" 404 5467
+WARNING 2025-03-01 12:55:02,113 log Not Found: /api/feedback/avaible_tests/
+WARNING 2025-03-01 12:55:02,113 basehttp "GET /api/feedback/avaible_tests/ HTTP/1.1" 404 5467
+INFO 2025-03-01 12:55:19,414 basehttp "GET /api/feedback/available_tests/ HTTP/1.1" 200 263
+WARNING 2025-03-01 12:56:26,958 log Not Found: /api/feedback/answer/19
+WARNING 2025-03-01 12:56:26,958 basehttp "POST /api/feedback/answer/19 HTTP/1.1" 404 83
+WARNING 2025-03-01 12:56:45,489 log Not Found: /api/feedback/answer/1
+WARNING 2025-03-01 12:56:45,490 basehttp "POST /api/feedback/answer/1 HTTP/1.1" 404 83
+INFO 2025-03-01 12:56:52,272 basehttp "POST /api/feedback/answer/2 HTTP/1.1" 201 121
+INFO 2025-03-01 12:57:50,513 basehttp "GET /api/feedback/answer/2 HTTP/1.1" 200 121
+WARNING 2025-03-01 12:59:01,024 log Bad Request: /api/users/auth/users/set_password/
+WARNING 2025-03-01 12:59:01,025 basehttp "POST /api/users/auth/users/set_password/ HTTP/1.1" 400 42
+WARNING 2025-03-01 12:59:13,508 log Bad Request: /api/users/auth/users/set_password/
+WARNING 2025-03-01 12:59:13,510 basehttp "POST /api/users/auth/users/set_password/ HTTP/1.1" 400 134
+INFO 2025-03-01 12:59:25,505 basehttp "POST /api/users/auth/users/set_password/ HTTP/1.1" 204 0
+INFO 2025-03-01 13:10:25,809 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 13:15:13,084 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 13:16:44,912 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 13:16:45,735 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 13:16:50,617 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 13:16:51,289 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 13:16:56,271 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 13:16:56,770 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 13:17:08,923 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 13:17:09,478 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 13:17:46,990 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 13:19:36,431 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-01 13:19:42,827 basehttp "GET /swagger/ HTTP/1.1" 500 59
+INFO 2025-03-01 13:20:06,972 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 13:20:07,736 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 13:20:12,502 basehttp "GET /swagger/ HTTP/1.1" 200 18894
+INFO 2025-03-01 13:38:43,378 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 13:38:44,187 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 13:38:51,714 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 13:38:52,341 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 13:38:55,691 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 13:38:56,293 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 13:38:58,423 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 13:38:59,003 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 13:39:01,086 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-01 13:39:06,246 basehttp "GET /swagger/ HTTP/1.1" 500 59
+ERROR 2025-03-01 13:41:14,423 basehttp "GET /swagger/ HTTP/1.1" 500 59
+INFO 2025-03-01 13:41:44,284 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 13:41:44,843 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-01 13:41:45,839 basehttp "GET /swagger/ HTTP/1.1" 500 59
+ERROR 2025-03-01 13:41:46,720 basehttp "GET /swagger/ HTTP/1.1" 500 59
+ERROR 2025-03-01 13:41:47,010 basehttp "GET /swagger/ HTTP/1.1" 500 59
+ERROR 2025-03-01 13:41:47,303 basehttp "GET /swagger/ HTTP/1.1" 500 59
+INFO 2025-03-01 13:42:06,692 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 13:42:07,246 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-01 13:42:08,744 basehttp "GET /swagger/ HTTP/1.1" 500 59
+ERROR 2025-03-01 13:42:09,652 basehttp "GET /swagger/ HTTP/1.1" 500 59
+INFO 2025-03-01 13:42:15,833 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 13:42:16,517 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-01 13:42:17,460 basehttp "GET /swagger/ HTTP/1.1" 500 59
+ERROR 2025-03-01 13:42:19,184 basehttp "GET /swagger/ HTTP/1.1" 500 59
+INFO 2025-03-01 13:43:04,747 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-01 13:43:07,751 basehttp "GET /swagger/ HTTP/1.1" 500 59
+ERROR 2025-03-01 13:44:00,425 basehttp "GET /swagger/ HTTP/1.1" 500 59
+ERROR 2025-03-01 13:44:02,276 basehttp "GET /swagger/ HTTP/1.1" 500 59
+INFO 2025-03-01 18:45:35,408 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 18:45:36,388 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 18:45:39,652 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 18:45:40,459 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 18:45:41,740 basehttp "GET /swagger/ HTTP/1.1" 200 18894
+INFO 2025-03-01 18:45:51,058 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 18:45:51,711 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 18:46:22,849 autoreload D:\alisher_proga\feed-edu-demo\feed_edu_demo\feed_edu_demo\settings.py changed, reloading.
+INFO 2025-03-01 18:46:23,413 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 18:46:52,377 autoreload Watching for file changes with StatReloader
+INFO 2025-03-01 18:46:54,643 basehttp "GET /swagger/ HTTP/1.1" 200 18894
